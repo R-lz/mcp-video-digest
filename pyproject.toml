@@ -1,0 +1,33 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "mcp-video-digest"
+version = "0.1.0"
+description = "MCP Server for transcribing videos via video links and summarizing video content"
+authors = [
+    { name = "R-lz"}
+]
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "mcp>=1.6.0",      
+    "yt-dlp>=2025.3.31",
+    "requests>=2.32.3",
+    "python-dotenv>=1.1.0",
+    "speechmatics-python>=3.0.3",
+]
+
+[project.scripts]
+video-digest = "src.main:mcp"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src"]
+
+[tool.hatch.build]
+include = [
+    "src/**/*.py",
+    "config/**/*.py",
+    "tests/**/*.py"
+]
