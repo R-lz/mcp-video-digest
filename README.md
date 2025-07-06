@@ -1,3 +1,5 @@
+[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/r-lz-mcp-video-digest-badge.png)](https://mseep.ai/app/r-lz-mcp-video-digest)
+
 # MCP Video Digest (视频内容提取总结)
 
 <div align="right">
